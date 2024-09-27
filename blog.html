@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<html data-theme="light">
+
+</html>
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Donate Bangladesh</title>
+     <link rel="stylesheet" href="style.css">
+
+     <!-- DaisyUI cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- font-awesome cdn -->
+     <script src="https://kit.fontawesome.com/bbfc4be646.js" crossorigin="anonymous"></script>
+     <!-- font family -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+     <style>
+          .font-manrope {
+               font-family: "Manrope", sans-serif;
+          }
+     </style>
+     <!-- tailwind Config cdn -->
+     <script>
+          tailwind.config = {
+               theme: {
+                    extend: {
+                         colors: {
+                              clifford: '#da373d',
+                              'btn-colors': '#b4f461',
+                              'bg-color': '#f9f7f3'
+                         }
+                    }
+               }
+          }
+     </script>
+</head>
+
+<body>
+     <header class=" mx-auto w-[1240] sticky top-0  z-10 ">
+
+
+          <div class=" container bg-bg-color mx-auto py-6 px-6 flex justify-between items-center  ">
+               <!-- btn -->
+
+               <div class=" bg-btn-colors py-2 px-5 rounded-lg text-lg font-bold">
+                    <button id="blog-btn">Blog</button>
+               </div>
+               <!-- logo -->
+
+               <div class=" hidden md:flex justify-between items-center gap-5">
+                    <img src="Images/logo.png" alt="#">
+                    <h3 class="font-bold text-2xl ">Donate Bangladesh</h3>
+               </div>
+               <!-- coin update -->
+               <div id="reserved-amount"  class="flex justify-between items-center gap-3">
+                    <img src="Images/coin.png" alt="">
+                    <p class=" font-bold">12000 BDT</p>
+
+               </div>
+          </div>
+
+          
+
+     </header>
+     <section class=" p-10 mx-auto w-[1240]">
+          <div class=" ">
+               <div class="flex gap-2">
+                    <h1 class=" text-4xl font-bold">Important FAQ</h1>
+                    <i class="fa-solid fa-question font-bold"></i>
+
+               </div>
+          </div>
+
+          <div class="join join-vertical w-full  pt-10 ">
+               <div class="collapse collapse-arrow join-item border-base-800 border-2 sha">
+                    <input type="radio" name="my-accordion-1" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is the DOM, and why is it important in web
+                         development?</div>
+                    <div class="collapse-content">
+                         <p>The Document Object Model (DOM) is a programming interface for web documents. It represents
+                              the structure of a document as a tree of objects, allowing developers to manipulate the
+                              content, structure, and style of a webpage dynamically. The DOM is crucial because it
+                              enables interactive web applications, making it possible to respond to user actions and
+                              update content without reloading the page.</p>
+                    </div>
+               </div>
+               <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium"> How does the DOM affect the performance of a web
+                         application?</div>
+                    <div class="collapse-content">
+                         <p>The DOM can significantly impact performance. A large or complex DOM can slow down a web
+                              application, leading to laggy interactions. Efficient manipulation and minimizing DOM
+                              updates can enhance performance. Techniques like batch updates and minimizing reflows and
+                              repaints help optimize the use of the DOM.</p>
+                    </div>
+               </div>
+               <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium"> Why is understanding the DOM essential for
+                         front-end developers?</div>
+                    <div class="collapse-content">
+                         <p>Front-end developers need to understand the DOM to create interactive and dynamic web
+                              applications. Knowledge of the DOM allows them to effectively use JavaScript frameworks
+                              and libraries, manipulate elements, handle events, and ensure that the user experience is
+                              smooth and responsive.</p>
+                    </div>
+               </div>
+               <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium"> What role does the DOM play in accessibility?</div>
+                    <div class="collapse-content">
+                         <p>The DOM plays a vital role in web accessibility. Properly structured DOM elements can
+                              improve screen reader navigation and ensure that interactive elements are accessible to
+                              all users. Understanding the DOM helps developers create semantic HTML and implement ARIA
+                              roles to enhance the accessibility of their applications.</p>
+                    </div>
+               </div>
+               <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium"> How does the DOM interact with CSS and JavaScript?
+                    </div>
+                    <div class="collapse-content">
+                         <p>The DOM acts as a bridge between HTML (the structure), CSS (the styling), and JavaScript
+                              (the behavior). CSS can style elements based on their properties in the DOM, while
+                              JavaScript can manipulate those properties to create dynamic changes. Understanding this
+                              interaction allows developers to create visually appealing and interactive user
+                              experiences.</p>
+                    </div>
+               </div>
+
+          </div>
+     </section>
+     <footer class="bg-bg-color  mx-auto w-[1240]">
+          <div class="py-10">
+               <p class="text-center">© 2024 Donate Bangladesh. All rights reserved.</p>
+
+          </div>
+
+     </footer>
+
+     <script>
+          document.getElementById('home-btn').addEventListener('click', function () {
+               window.location.href = "./index.html";
+
+
+          })
+     </script>
+
+</body>
+
+
+</html>
